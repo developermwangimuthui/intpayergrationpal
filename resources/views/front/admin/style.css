@@ -1,0 +1,64 @@
+.no-padding{
+    padding: 0px !important;
+}
+.sidebar{
+    background-color: #23282d;
+    min-height: calc(100vh - 0px);
+}
+.sidebar ul{
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar ul li{
+    list-style-type: none;
+    display: block;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.10);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.sidebar ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.10);
+    transition: 1s;
+}
+.main-wrap{
+    background-color: #EDEDED;
+    min-height: calc(100vh - 0px);
+}
+.main-wrap .main{
+    padding-left: 10px;
+}
+.main-wrap h1{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #000000;
+}
+/* Order */
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+.admin-wrap{
+    width: 99%;
+    overflow: hidden;
+}
+.admin-wrap hr{
+    border-top: 1px solid #99a6c4;
+}

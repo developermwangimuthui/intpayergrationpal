@@ -1,0 +1,2 @@
+[30-Mar-2020 19:51:26 America/New_York] PHP Notice:  Undefined variable: sandbox in /home/pfaceesl/public_html/payment-gateway/functions.php on line 69
+[30-Mar-2020 19:51:26 America/New_York] PHP Notice:  Undefined variable: paypal in /home/pfaceesl/public_html/payment-gateway/functions.php on line 88

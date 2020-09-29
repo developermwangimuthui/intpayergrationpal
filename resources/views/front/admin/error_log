@@ -1,0 +1,12 @@
+[30-Mar-2020 19:51:57 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 17
+[30-Mar-2020 19:52:11 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 17
+[30-Mar-2020 19:52:18 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 17
+[30-Mar-2020 19:53:49 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 17
+[30-Mar-2020 19:53:49 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 19
+[30-Mar-2020 19:56:26 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 17
+[30-Mar-2020 19:56:31 America/New_York] PHP Notice:  Undefined variable: password in /home/pfaceesl/public_html/payment-gateway/admin/index.php on line 17
+[30-Mar-2020 20:22:26 America/New_York] PHP Notice:  Undefined variable: sandbox in /home/pfaceesl/public_html/payment-gateway/admin/settings.php on line 51
+[30-Mar-2020 20:22:26 America/New_York] PHP Notice:  Undefined variable: paypal in /home/pfaceesl/public_html/payment-gateway/admin/settings.php on line 57
+[30-Mar-2020 20:22:56 America/New_York] PHP Notice:  Undefined index: paypal-sandbox in /home/pfaceesl/public_html/payment-gateway/admin/settings.php on line 10
+[30-Mar-2020 20:22:59 America/New_York] PHP Notice:  Undefined index: paypal-sandbox in /home/pfaceesl/public_html/payment-gateway/admin/settings.php on line 10
+[30-Mar-2020 20:34:14 America/New_York] PHP Notice:  Undefined index: paypal-sandbox in /home/pfaceesl/public_html/payment-gateway/admin/settings.php on line 10
