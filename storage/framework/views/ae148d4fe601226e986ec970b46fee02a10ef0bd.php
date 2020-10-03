@@ -86,18 +86,18 @@
                 <td colspan="2"><strong>Premium Freelancing Accounts</strong>
                     <br>
                     Beedstrasse 54 <br>
-                    40468 Düsseldorf <br>
+                    40468 Dusseldorf <br>
                     Germany<br></td>
 
             </tr>
             <tr >
                 <td style="width:53%;"><span style="font-weight: bolder;font-size:30px">INVOICE</span><br><br>
-                    {{ $data['orders_data'][0]->customers_name }}<br>ad
-                    {{ $data['orders_data'][0]->email }}</td>
-                <td colspan="2"> {{ trans('Order Number') }} #:
-                    &nbsp;&nbsp; {{'PF'.$data['orders_data'][0]->orders_id }}<br>
-                    Order Date:&nbsp;&nbsp; {{ date('F j, Y', strtotime($data['orders_data'][0]->date_purchased)) }}<br>
-                    Payment Method:&nbsp;&nbsp;{{ str_replace('_',' ', $data['orders_data'][0]->payment_method) }}</td>
+                    <?php echo e($data['orders_data'][0]->customers_name); ?><br>ad
+                    <?php echo e($data['orders_data'][0]->email); ?></td>
+                <td colspan="2"> <?php echo e(trans('Order Number')); ?> #:
+                    &nbsp;&nbsp; <?php echo e('PF'.$data['orders_data'][0]->orders_id); ?><br>
+                    Order Date:&nbsp;&nbsp; <?php echo e(date('F j, Y', strtotime($data['orders_data'][0]->date_purchased))); ?><br>
+                    Payment Method:&nbsp;&nbsp;<?php echo e(str_replace('_',' ', $data['orders_data'][0]->payment_method)); ?></td>
 
             </tr>
             <tr>
@@ -109,62 +109,64 @@
                         <th>Price</th>
                     </tr>
                     <tr>
-                        <td> {{  $data['prod_des']->products_name }}</td>
-                        <td>{{  $data['prod_des']->products_quantity }}</td>
-                        <td>@if($data['orders_data'][0]->currency == 'USD')
+                        <td> <?php echo e($data['prod_des']->products_name); ?></td>
+                        <td><?php echo e($data['prod_des']->products_quantity); ?></td>
+                        <td><?php if($data['orders_data'][0]->currency == 'USD'): ?>
                                 $
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'EUR')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'EUR'): ?>
                                 €
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'GBP')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'GBP'): ?>
                                 £
-                            @endif
-                            {{ $data['prod_des']->final_price }}</td>
+                            <?php endif; ?>
+                            <?php echo e($data['prod_des']->final_price); ?></td>
                     </tr>
                     <tr >
                         <td></td>
                         <td class="me"> <strong>Subtotal</strong></td>
-                        <td class="me">@if($data['orders_data'][0]->currency == 'USD')
+                        <td class="me"><?php if($data['orders_data'][0]->currency == 'USD'): ?>
                                 $
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'EUR')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'EUR'): ?>
                                 €
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'GBP')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'GBP'): ?>
                                 £
-                            @endif
-                            {{ $data['orders_data'][0]->order_price }}
+                            <?php endif; ?>
+                            <?php echo e($data['orders_data'][0]->order_price); ?>
+
                         </td>
                     </tr>
                     <tr >
                         <td></td>
                         <td class="me"> <strong>Tax</strong></td>
-                        <td class="me">@if($data['orders_data'][0]->currency == 'USD')
+                        <td class="me"><?php if($data['orders_data'][0]->currency == 'USD'): ?>
                                 $
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'EUR')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'EUR'): ?>
                                 €
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'GBP')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'GBP'): ?>
                                 £
-                            @endif
-                            {{ $data['orders_data'][0]->total_tax }}
+                            <?php endif; ?>
+                            <?php echo e($data['orders_data'][0]->total_tax); ?>
+
                         </td>
                     </tr>
                     <tr >
                         <td></td>
                         <td class="total"> <strong>Total</strong></td>
-                        <td class="total"> <strong>@if($data['orders_data'][0]->currency == 'USD')
+                        <td class="total"> <strong><?php if($data['orders_data'][0]->currency == 'USD'): ?>
                                 $
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'EUR')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'EUR'): ?>
                                 €
-                            @endif
-                            @if($data['orders_data'][0]->currency == 'GBP')
+                            <?php endif; ?>
+                            <?php if($data['orders_data'][0]->currency == 'GBP'): ?>
                                 £
-                            @endif
-                            {{ $data['orders_data'][0]->order_price }}</strong>
+                            <?php endif; ?>
+                            <?php echo e($data['orders_data'][0]->order_price); ?></strong>
                         </td>
                     </tr>
 
@@ -176,3 +178,4 @@
 
 </body>
 </html>
+<?php /**PATH C:\Users\User\Documents\Php\intpayergrationpal\resources\views/admin/Orders/newinvoice.blade.php ENDPATH**/ ?>
