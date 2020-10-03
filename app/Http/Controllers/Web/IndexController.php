@@ -29,8 +29,7 @@ use App\Models\Web\Currency;
 use App\Models\Web\News;
 use App\Models\Web\Order;
 use App\User;
-use Mail;
-
+use Illuminate\Support\Facades\Mail;
 class IndexController extends Controller
 {
 
@@ -194,7 +193,7 @@ class IndexController extends Controller
         $paypal_id = DB::table('payment_methods_detail')->where('key', '=', 'id')->pluck('value')->first();
 
         $enviroment = DB::table('payment_methods')->where('payment_methods_id', '=', 3)->pluck('environment')->first();
-// dd($enviroment);
+    
 
         if ($enviroment == 0) {
             $url = 'https://www.sandbox.paypal.com/cgi-bin/webscr';

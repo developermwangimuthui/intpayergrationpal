@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Web;
 
 
 use Validator;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use DB;
 use Hash;
 use Auth;
@@ -337,18 +337,7 @@ class AlertController extends Controller
 
     public static function sendEmail($email,$emailmessage,$emailsubject,$client_name)
     {
-		// $data = array(
-        //     'recipient_email' =>$email,
-        //     'client_name' => $client_name,
-        //     'subject' => $emailsubject,
-        //     'client_message'=>$emailmessage
 
-        // );
-		// Mail::send('mail.email', $data, function($message) use ($data) {
-		// 	$message->to($data['recipient_email'], $data['client_name'])
-		// 	->subject($data['subject']);
-		// });
-        // dd($email);
 
         //open connection
         $ch = curl_init();
@@ -368,16 +357,15 @@ class AlertController extends Controller
         curl_close($ch);
         /*echo $result; exit;*/
         // Further processing ...
-        if ($result == "OK")
+        if ($result == 1)
         {
 
-             dd($result,'Sucess');
             return $result;
 
         }
         else
         {
-             dd($result,'Failed');
+
 
             return $result;
 

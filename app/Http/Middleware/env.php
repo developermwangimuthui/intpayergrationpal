@@ -18,6 +18,7 @@ class env
     {
       if(Auth::guard('customer')->check()){
         $user = auth()->guard('customer')->user();
+
         if($user->role_id != 1){
           Auth::guard('customer')->logout();
           return redirect('/maintance');

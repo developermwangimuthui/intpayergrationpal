@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'mail.pfaccounts.com'),
+    'host' => env('MAIL_HOST', 'mail.pfamart.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'contact@pfaccounts.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'services@pfamart.com'),
         'name' => env('MAIL_FROM_NAME', 'Contacts'),
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('contact@pfaccounts.com'),
+    'username' => env('services@pfamart.com'),
 
-    'password' => env('TluLK!7_JK'),
+    'password' => env('qi=sRh^sj659'),
 
     /*
     |--------------------------------------------------------------------------
