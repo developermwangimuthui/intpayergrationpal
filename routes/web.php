@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 if(file_exists(storage_path('installed'))){
     $check = DB::table('settings')->where('id', 94)->first();
-    
+ 
 	if($check->value == 'Maintenance'){
 		$middleware = ['installer','env'];
 	}
