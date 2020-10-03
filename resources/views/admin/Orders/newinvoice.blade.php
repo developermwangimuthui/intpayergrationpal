@@ -92,7 +92,7 @@
             </tr>
             <tr >
                 <td style="width:53%;"><span style="font-weight: bolder;font-size:30px">INVOICE</span><br><br>
-                    {{ $data['orders_data'][0]->customers_name }}<br>ad
+                    {{ $data['orders_data'][0]->customers_name }}<br>
                     {{ $data['orders_data'][0]->email }}</td>
                 <td colspan="2"> {{ trans('Order Number') }} #:
                     &nbsp;&nbsp; {{'PF'.$data['orders_data'][0]->orders_id }}<br>
