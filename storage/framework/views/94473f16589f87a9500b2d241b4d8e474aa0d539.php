@@ -275,6 +275,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"
           media="all"/>
+
+    <meta name="author" content="Mwangi Muthui(0721257308)/>
+    <meta name="MobileOptimized" content="320"/>
+    <!--favicon-->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/images/front_logo/pfa-2.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="//db.onlinewebfonts.com/c/44994582bcefd02119158ff8b0d16b75?family=PayPal+Sans+Big" rel="stylesheet"
@@ -500,7 +506,7 @@ session_start(); ?>
         var amount = jQuery('#enter-amount').val();
         var currency = jQuery('#currency-type').val();
 
-        if (services == "others") {
+        if (services == "others" || services == "Others") {
             service = otherservices;
         } else {
             service = services;
